@@ -1,0 +1,96 @@
+{
+  "name": "git-rebase-vscode",
+  "displayName": "git-rebase",
+  "description": "Quickly set the actions of an interactive git rebase using hotkeys.",
+  "version": "1.0.0",
+  "publisher": "trentrand",
+  "engines": {
+    "vscode": "^1.27.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.setRebaseActionPick",
+    "onCommand:extension.setRebaseActionReword",
+    "onCommand:extension.setRebaseActionEdit",
+    "onCommand:extension.setRebaseActionSquash",
+    "onCommand:extension.setRebaseActionFixup",
+    "onCommand:extension.setRebaseActionExec",
+    "onCommand:extension.setRebaseActionDrop"
+  ],
+  "main": "./extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.setRebaseActionPick",
+        "title": "Set rebase action: Pick"
+      },
+      {
+        "command": "extension.setRebaseActionReword",
+        "title": "Set rebase action: Reword"
+      },
+      {
+        "command": "extension.setRebaseActionEdit",
+        "title": "Set rebase action: Edit"
+      },
+      {
+        "command": "extension.setRebaseActionSquash",
+        "title": "Set rebase action: Squash"
+      },
+      {
+        "command": "extension.setRebaseActionFixup",
+        "title": "Set rebase action: Fixup"
+      },
+      {
+        "command": "extension.setRebaseActionExec",
+        "title": "Set rebase action: Exec"
+      },
+      {
+        "command": "extension.setRebaseActionDrop",
+        "title": "Set rebase action: Drop"
+      }
+    ],
+    "keybindings":[
+      {
+        "command": "extension.setRebaseActionPick",
+        "key": "p"
+      },
+      {
+        "command": "extension.setRebaseActionReword",
+        "key": "r"
+      },
+      {
+        "command": "extension.setRebaseActionEdit",
+        "key": "e"
+      },
+      {
+        "command": "extension.setRebaseActionSquash",
+        "key": "s"
+      },
+      {
+        "command": "extension.setRebaseActionFixup",
+        "key": "f"
+      },
+      {
+        "command": "extension.setRebaseActionExec",
+        "key": "x"
+      },
+      {
+        "command": "extension.setRebaseActionDrop",
+        "key": "d"
+      }
+    ]
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "^2.6.1",
+    "vscode": "^1.1.21",
+    "eslint": "^4.11.0",
+    "@types/node": "^8.10.25",
+    "@types/mocha": "^2.2.42"
+  }
+}
