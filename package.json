@@ -62,31 +62,38 @@
     "keybindings":[
       {
         "command": "extension.setRebaseActionPick",
-        "key": "p"
+        "key": "p",
+        "when": "editorLangId == git-rebase"
       },
       {
         "command": "extension.setRebaseActionReword",
-        "key": "r"
+        "key": "r",
+        "when": "editorLangId == git-rebase"
       },
       {
         "command": "extension.setRebaseActionEdit",
-        "key": "e"
+        "key": "e",
+        "when": "editorLangId == git-rebase"
       },
       {
         "command": "extension.setRebaseActionSquash",
-        "key": "s"
+        "key": "s",
+        "when": "editorLangId == git-rebase"
       },
       {
         "command": "extension.setRebaseActionFixup",
-        "key": "f"
+        "key": "f",
+        "when": "editorLangId == git-rebase"
       },
       {
         "command": "extension.setRebaseActionExec",
-        "key": "x"
+        "key": "x",
+        "when": "editorLangId == git-rebase"
       },
       {
         "command": "extension.setRebaseActionDrop",
-        "key": "d"
+        "key": "d",
+        "when": "editorLangId == git-rebase"
       }
     ]
   },
