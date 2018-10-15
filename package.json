@@ -1,9 +1,17 @@
 {
-  "name": "git-rebase-vscode",
-  "displayName": "git-rebase",
-  "description": "Quickly set the actions of an interactive git rebase using hotkeys.",
   "version": "1.0.0",
+  "name": "git-rebase-shortcuts",
+  "displayName": "Git rebase shortcuts",
+  "description": "Use keyboard shortcuts to edit an interactive git rebase",
   "publisher": "trentrand",
+  "homepage": "https://github.com/trentrand/vscode-git-rebase/blob/master/README.md",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/trentrand/vscode-git-rebase.git"
+  },
+  "bugs": {
+      "url": "https://github.com/trentrand/vscode-git-rebase/issues"
+  },
   "engines": {
     "vscode": "^1.27.0"
   },
