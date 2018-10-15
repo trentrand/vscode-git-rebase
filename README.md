@@ -1,14 +1,23 @@
 # Git Rebase (Visual Studio Code Extension)
 
-Quickly set the actions of an interactive git rebase using keys 'p', 'r', 'e', 's', 'f', 'x', 'd'.
+Use keyboard shortcuts to quickly edit the actions of an interactive Git rebase.
 
 \!\[Extension Preview\]\(Preview.gif\)
 
-## Extension Settings
+## How to Use
 
-This extension contributes the following settings:
+Press the key that correspondence to your desired git rebase action.
+This command will be applied to all selected lines.
 
-* `git-rebase-vscode.enableDropdown`: enable/disable the git rebase action dropdown selector
+Keyboard shortcuts:
+
+* `p` sets command to 'Pick'
+* `r` sets command to 'Reword'
+* `e` sets command to 'Edit'
+* `s` sets command to 'Squash'
+* `f` sets command to 'Fixup'
+* `x` sets command to 'Execute'
+* `d` sets command to 'Drop'
 
 ## Known Issues
 
@@ -18,4 +27,5 @@ No currently known issues. Please open a ticket on GitHub for any bugs.
 
 ### 1.0.0
 
-Initial release with support for quickly setting the rebase action in a `git-rebase` language file using keys 'p', 'r', 'e', 's', 'f', 'x', 'd'.
+Initial release with support for quickly setting the rebase action in a 
+`git-rebase` language file using keys 'p', 'r', 'e', 's', 'f', 'x', 'd'.
