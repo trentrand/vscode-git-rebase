@@ -2,7 +2,7 @@
 
 Use keyboard shortcuts to quickly edit the actions of an interactive Git rebase.
 
-\!\[Extension Preview\]\(Preview.gif\)
+![Extension Preview](Preview.gif)
 
 ## How to Use
 
