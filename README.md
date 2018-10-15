@@ -25,11 +25,4 @@ No currently known issues. Please open a ticket on GitHub for any bugs.
 
 ## Release Notes
 
-### 1.0.1
-
-Constrain all keybindings to `git-rebase` files only.
-
-### 1.0.0
-
-Initial release with support for quickly setting the rebase action in a 
-`git-rebase` language file using keys 'p', 'r', 'e', 's', 'f', 'x', 'd'.
+Release notes for all versions can be found in the [changelog](CHANGELOG.md).
