@@ -11,13 +11,13 @@ This command will be applied to all selected lines.
 
 Keyboard shortcuts:
 
-* `p` sets command to 'Pick'
-* `r` sets command to 'Reword'
-* `e` sets command to 'Edit'
-* `s` sets command to 'Squash'
-* `f` sets command to 'Fixup'
-* `x` sets command to 'Execute'
-* `d` sets command to 'Drop'
+* <kbd>p</kbd> sets command to 'Pick'
+* <kbd>r</kbd> sets command to 'Reword'
+* <kbd>e</kbd> sets command to 'Edit'
+* <kbd>s</kbd> sets command to 'Squash'
+* <kbd>f</kbd> sets command to 'Fixup'
+* <kbd>x</kbd> sets command to 'Execute'
+* <kbd>d</kbd> sets command to 'Drop'
 
 ## Known Issues
 
