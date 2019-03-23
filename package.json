@@ -1,7 +1,7 @@
 {
   "name": "git-rebase-shortcuts",
   "displayName": "Git rebase shortcuts",
-  "icon": "./extension_icon.png",
+  "icon": "icon.png",
   "description": "Use keyboard shortcuts to edit an interactive git rebase",
   "version": "1.0.3",
   "publisher": "trentrand",
@@ -28,7 +28,7 @@
     "onCommand:extension.setRebaseActionExec",
     "onCommand:extension.setRebaseActionDrop"
   ],
-  "main": "./extension",
+  "main": "./extension/index.js",
   "contributes": {
     "commands": [
       {
