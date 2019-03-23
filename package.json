@@ -3,7 +3,7 @@
   "displayName": "Git rebase shortcuts",
   "icon": "extension/icon.png",
   "description": "Use keyboard shortcuts to edit an interactive git rebase",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "publisher": "trentrand",
   "homepage": "https://github.com/trentrand/vscode-git-rebase/blob/master/README.md",
   "repository": {
