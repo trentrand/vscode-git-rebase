@@ -2,7 +2,7 @@
 
 Use keyboard shortcuts to quickly edit the actions of an interactive Git rebase.
 
-![Extension Preview](Preview.gif)
+![Extension Preview](https://raw.githubusercontent.com/trentrand/vscode-git-rebase/master/Preview.gif)
 
 ## How to Use
 
