@@ -31,10 +31,15 @@ exports.deactivate = function() {}; // unused
 // Change the rebase action for the currently selected lines
 function setActionForSelectedLines(action, textEditor, editContext) {
   if (textEditor.document.languageId === 'git-rebase') {
-    const startLine = textEditor.selections[0].start.line;
-    const endLine = textEditor.selections[0].end.line;
-    
-    for (let line = startLine; line <= endLine; line++) {
+    const selectedLines = new Set();
+
+    for (let selection of textEditor.selections) {
+      for (let line = selection.start.line; line <= selection.end.line; line++) {
+        selectedLines.add(line);
+      }
+    }
+
+    for (let line of selectedLines) {
       setAction(line, action, textEditor, editContext);
     }
   }
