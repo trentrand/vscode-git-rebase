@@ -30,12 +30,12 @@ exports.deactivate = function() {}; // unused
 
 // Change the rebase action for the currently selected lines
 function setActionForSelectedLines(action, textEditor, editContext) {
-  if (textEditor._documentData._languageId === 'git-rebase') {
-    const startLine = textEditor._selections[0].start.line;
-    const endLine = textEditor._selections[0].end.line;
+  if (textEditor.document.languageId === 'git-rebase') {
+    const startLine = textEditor.selections[0].start.line;
+    const endLine = textEditor.selections[0].end.line;
     
     for (let line = startLine; line <= endLine; line++) {
-      setAction(line, action, editContext);
+      setAction(line, action, textEditor, editContext);
     }
   }
 }
@@ -52,8 +52,8 @@ function getActionFromLine(lineText) {
 }
 
 // Rewrite the rebase action on the specified line
-function setAction(line, action, editContext) {
-  const selectedLine = editContext._document.lineAt(new vscode.Position(line, 0));
+function setAction(line, action, textEditor, editContext) {
+  const selectedLine = textEditor.document.lineAt(new vscode.Position(line, 0));
   const prevAction = getActionFromLine(selectedLine.text);
 
   if (prevAction === null) {
